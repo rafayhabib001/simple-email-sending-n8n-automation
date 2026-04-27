@@ -1,0 +1,75 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "seconds"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        0,
+        0
+      ],
+      "id": "851d5078-4c26-46ea-a6eb-23df7b1359af",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "fromEmail": "amazrajpoot16@gmail.com",
+        "toEmail": "zidiraza997@gmail.com",
+        "subject": "kam kr ly",
+        "emailFormat": "text",
+        "text": "kam kr ly apna dekh ma b automation bna li ha tu b kuch kr 😂",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        208,
+        0
+      ],
+      "id": "6c2ebd33-031a-4a9b-89e2-fa94db76aa99",
+      "name": "Send an Email",
+      "webhookId": "89d651f0-66ae-451d-9b28-c74bc7dfb0b9",
+      "credentials": {
+        "smtp": {
+          "id": "1TAOP6wAiuFYE8Gi",
+          "name": "SMTP account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Send an Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "d17fbda3-56de-484e-81ae-d133e59b9a0c",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "016fc0340d5bca8a0c6c73b85fee9f8049911e2827bdfaaa12c8ad88c03f5cd5"
+  },
+  "id": "OxcjJi32wVbABHB3",
+  "tags": []
+}
