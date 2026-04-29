@@ -1,17 +1,27 @@
-📧 Simple Email Sender (n8n)
+# ⏰ Scheduled Email Automation (n8n)
 
-This is a basic automation built using n8n that sends a predefined message to a receiver via email.
+## 🔹 Overview
 
-🚀 Features
-Sends email automatically
-Minimal and lightweight workflow
-Easy to modify message and recipient
-🛠️ Built With
-n8n
-📌 Use Case
+This n8n workflow sends an automated email at a fixed time interval.
 
-This project shows how to create a simple email-sending automation using n8n.
+## ⚙️ How It Works
 
-📂 How It Works
-Workflow is triggered
-Email is sent to the receiver
+1. Schedule Trigger runs every few minutes
+2. Email node sends a predefined message
+
+## 🛠 Setup Instructions
+
+1. Import workflow into n8n
+2. Add your SMTP or email credentials
+3. Update sender and receiver email addresses
+4. Activate the workflow
+
+## 💡 Use Case
+
+* Reminder emails
+* Notifications
+* Scheduled alerts
+
+## ⚠️ Note
+
+This is a safe template. Replace placeholder values with your own credentials.
